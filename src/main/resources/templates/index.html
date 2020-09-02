@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="fragments/_head :: head ('Home')"></head>
+
+<body>
+    <header th:replace="fragments/_header :: header"></header>
+
+    <main>
+        <figure>
+            <img width="500px" th:src="@{/images/stars.jpg}">
+            <figcaption><span>Photo by <a href="https://unsplash.com/@weirick?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jake Weirick</a> on <a href="https://unsplash.com/s/photos/stars?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></figcaption>
+        </figure>
+        <div class="card-content">
+            <h3>Neowise Tutorial</h3>
+            <p>This is the last weekend to see the Neowise comet. It will not be visible from earth for another nearly 7,000 years.</p>
+            <p>Local amateur photographer Jerry Hamblen has had a lot of luck getting beautiful pictures of the comet.</p>
+            <p>He says you can find it with these three steps.</p>
+            <div class="center"><a th:href="@{/step1}">Start the tutorial</a></div>
+        </div>
+        </main>
+
+
+
+    <footer th:replace="fragments/_footer :: footer"></footer>
+</body>
+</html>

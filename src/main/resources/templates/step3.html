@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head th:replace="fragments/_head :: head ('Step 3')"></head>
+
+<body>
+<header th:replace="fragments/_header :: header"></header>
+
+<main>
+    <figure>
+        <img width="500px" th:src="@{/images/hamblen-comet.png}">
+        <figcaption><a href="https://krcrtv.com/news/local/three-easy-steps-to-finding-the-neowise-comet">Photo captured by Jerry Hamblen</a></figcaption>
+    </figure>
+
+    <div class="card-content">
+        <h3>Step 3</h3>
+        <p>To find the direction, use a compass or the compass app on your smartphone. When the compass hits 303, that is the direction of the comet. It should be just below the big dipper.</p>
+
+        <div class="center"><a th:href="@{/step2}">Back</a> <a th:href="@{/}">End</a></div>
+    </div>
+
+</main>
+
+
+
+<footer th:replace="fragments/_footer :: footer"></footer>
+</body>
+</html>
